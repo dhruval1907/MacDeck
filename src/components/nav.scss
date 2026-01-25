@@ -1,3 +1,10 @@
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -5,27 +12,207 @@ nav {
     align-items: center;
     padding: 0.2rem;
     font-family: "Press Start 2P", system-ui;
-
-}
-
-.left {
-    display: flex;      
-    width: 100%;
-    padding: 0.5rem 0.5rem;
-    backdrop-filter: blur(5px);
-    gap: 1rem;
-    align-items: center;
-
-    p {
-        font-size: 0.5rem;
-        font-family: "Press Start 2P", system-ui;
-        color: white;
+    background-color: transparent;
+    position: relative;
+    min-height: 44px; // Minimum touch target height
+    
+    // Ensure text doesn't overflow on very small screens
+    overflow: hidden;
+    
+    @media (min-width: 768px) {
+        padding: 0.5rem;
     }
-}
+    
+    @media (min-width: 1024px) {
+        padding: 0.5rem 1rem;
+    }
 
-.right {
-    display: flex;
-    width: 12% !important;
-    // background-color: red;
-    gap: 1rem;
+    .left {
+        display: flex;
+        padding: 0.5rem;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); // For Safari
+        align-items: center;
+        gap: 0.75rem;
+        width: auto; // Remove fixed width for flexibility
+        flex: 1; // Take available space
+        
+        @media (min-width: 640px) {
+            gap: 1rem;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        @media (min-width: 768px) {
+            gap: 1.25rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        @media (min-width: 1024px) {
+            gap: 1.5rem;
+        }
+
+        .apple-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 16px; // Minimum size for touch target
+            min-height: 16px;
+            
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 16px;
+                max-height: 16px;
+                
+                @media (min-width: 640px) {
+                    max-width: 18px;
+                    max-height: 18px;
+                }
+                
+                @media (min-width: 768px) {
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            white-space: nowrap; // Prevent text wrapping
+            
+            p {
+                font-size: 8px;
+                font-family: "Press Start 2P", system-ui;
+                color: white;
+                margin: 0;
+                line-height: 1.2;
+                
+                @media (min-width: 375px) {
+                    font-size: 9px;
+                }
+                
+                @media (min-width: 640px) {
+                    font-size: 10px;
+                }
+                
+                @media (min-width: 768px) {
+                    font-size: 11px;
+                }
+                
+                @media (min-width: 1024px) {
+                    font-size: 12px;
+                }
+                
+                @media (min-width: 1280px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        justify-content: flex-end;
+        width: auto; // Remove fixed width
+        min-width: fit-content; // Ensure it doesn't shrink too much
+        
+        @media (min-width: 640px) {
+            gap: 1rem;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        @media (min-width: 768px) {
+            gap: 1.25rem;
+            padding: 0.5rem 1rem;
+        }
+
+        img {
+            width: 14px;
+            height: auto;
+            min-width: 14px;
+            
+            @media (min-width: 375px) {
+                width: 16px;
+                min-width: 16px;
+            }
+            
+            @media (min-width: 640px) {
+                width: 18px;
+                min-width: 18px;
+            }
+            
+            @media (min-width: 768px) {
+                width: 20px;
+                min-width: 20px;
+            }
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            
+            div {
+                font-size: 8px;
+                color: white;
+                font-family: "Press Start 2P", system-ui;
+                line-height: 1.2;
+                
+                @media (min-width: 375px) {
+                    font-size: 9px;
+                }
+                
+                @media (min-width: 640px) {
+                    font-size: 10px;
+                }
+                
+                @media (min-width: 768px) {
+                    font-size: 11px;
+                }
+                
+                @media (min-width: 1024px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 319px) {
+        .left {
+            gap: 0.5rem;
+            padding: 0.25rem;
+            
+            .nav-item p {
+                font-size: 7px;
+            }
+        }
+        
+        .right {
+            gap: 0.5rem;
+            padding: 0.25rem;
+            
+            img {
+                width: 12px;
+            }
+            
+            .nav-item div {
+                font-size: 7px;
+            }
+        }
+    }
+    
+    // Handle landscape mode on mobile
+    @media (max-height: 500px) and (orientation: landscape) {
+        min-height: 36px;
+        
+        .left, .right {
+            padding: 0.25rem;
+        }
+    }
 }
