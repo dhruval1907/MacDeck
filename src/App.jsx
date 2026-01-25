@@ -1,6 +1,6 @@
 import "./app.scss"
 // import hero from "";
-import hero from "../public/home.jpg"
+import hero from "../public/hero2.jpg"
 
 
 const App = () => {
