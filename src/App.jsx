@@ -4,6 +4,7 @@ import hero from "../public/hero2.jpg"
 import Dock from "./components/Dock"
 import Nav from "./components/Nav"
 import MacWimdow from "./windows/MacWimdow"
+import Github from "./windows/Github"
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
       <main style={{ backgroundImage: `url(${hero})`, backgroundPosition: "center", backgroundSize: "cover" }}>
         <Dock />
         <Nav />
-        <MacWimdow />
+        <Github/>
       </main>
     </div>
   )

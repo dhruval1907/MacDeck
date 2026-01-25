@@ -1,5 +1,44 @@
-.window{
-    height: 70vh;
-    width: 70%;
-    background-color: black ;
+.window {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    font-family: "Press Start 2P", system-ui;
+
+    .nav {
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        border-bottom: 1px solid rgba(245, 245, 245, 0.343);
+        .dots {
+            display: flex;
+            gap: 0.25rem;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+            }
+
+            .red {
+                background-color: rgba(255, 0, 0, 0.813);
+            }
+
+            .green {
+                background-color: rgba(0, 128, 0, 0.656);
+            }
+
+            .yellow {
+                background-color: rgba(255, 255, 0, 0.719);
+            }
+        }
+        .title p{
+            color: rgba(255, 255, 255, 0.782);
+            font-weight: 900;
+            font-size: 0.5rem;
+        }
+    }
+
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website to showcase my projects, skills, and contact details with a clean UI.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "repoLink": "https://github.com/yourusername/portfolio-website",
+    "demoLink": "https://yourusername.github.io/portfolio-website/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
+    "title": "Interior Design Landing Page",
+    "description": "A modern interior design landing page built with responsive layout and elegant styling.",
+    "tags": ["HTML", "CSS", "Responsive Design"],
+    "repoLink": "https://github.com/yourusername/interior-design-website",
+    "demoLink": "https://yourusername.github.io/interior-design-website/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "title": "Task Management App",
+    "description": "A simple task management app to add, delete, and track daily tasks efficiently.",
+    "tags": ["React", "JavaScript", "CSS"],
+    "repoLink": "https://github.com/yourusername/task-manager",
+    "demoLink": "https://task-manager-demo.netlify.app/"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    "title": "Expense Tracker",
+    "description": "An expense tracker app that helps users monitor income and expenses with basic charts.",
+    "tags": ["JavaScript", "Chart.js", "HTML", "CSS"],
+    "repoLink": "https://github.com/yourusername/expense-tracker",
+    "demoLink": "https://expense-tracker-demo.netlify.app/"
+  }
+]
