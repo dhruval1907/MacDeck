@@ -4,34 +4,32 @@ import "./dock.scss"
 
 const Dock = () => {
     return (
-        <div>
-            <footer>
-                <div className='icons'>
-                    <img src="/doc-icons/github.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/note.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/pdf.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/calender.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/spotify.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/mail.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/link.svg" alt="" />
-                </div>
-                <div className='icons'>
-                    <img src="/doc-icons/cli.svg" alt="" />
-                </div>
-            </footer>
-        </div>
+        <footer className='dock'>
+            <div className='icons github'>
+                <img src="/doc-icons/github.svg" alt="" />
+            </div>
+            <div className='icons note'>
+                <img src="/doc-icons/note.svg" alt="" />
+            </div>
+            <div className='icons pdf'>
+                <img src="/doc-icons/pdf.svg" alt="" />
+            </div>
+            <div className='icons calender'>
+                <img src="/doc-icons/calender.svg" alt="" />
+            </div>
+            <div className='icons spotify'>
+                <img src="/doc-icons/spotify.svg" alt="" />
+            </div>
+            <div className='icons mail'>
+                <img src="/doc-icons/mail.svg" alt="" />
+            </div>
+            <div className='icons link'>
+                <img src="/doc-icons/link.svg" alt="" />
+            </div>
+            <div className='icons cli'>
+                <img src="/doc-icons/cli.svg" alt="" />
+            </div>
+        </footer>
     )
 }
 
