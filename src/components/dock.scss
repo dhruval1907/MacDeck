@@ -94,7 +94,7 @@
         background: linear-gradient(rgba(0, 0, 0, 0), black);
     }
 
-    
+    // Only apply hover effects on devices that support hover
     @media (hover: hover) and (pointer: fine) {
         .icons:hover {
             transform: scale(1.20) translateY(-20%);
@@ -106,6 +106,7 @@
         }
     }
 
+    // Touch device optimizations
     @media (hover: none) and (pointer: coarse) {
         .icons:active {
             transform: scale(0.95);
@@ -113,6 +114,7 @@
         }
     }
 
+    // Handle very small screens
     @media (max-width: 350px) {
         width: 95%;
         padding: 0.5rem;
