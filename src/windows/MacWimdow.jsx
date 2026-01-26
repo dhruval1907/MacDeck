@@ -16,7 +16,6 @@ const MacWimdow = () => {
                         <div className="title"><p>dhruvalwindow -zsh</p></div>
                     </div>
                     <div className="main-content">
-                       
                     </div>
                 </div>
             </Rnd>
