@@ -3,32 +3,65 @@ import { Rnd } from 'react-rnd'
 import "./window.scss"
 
 const MacWindow = ({ children }) => {
-    return (
-        <div>
-            <Rnd
-                default={{
-                    width :"",
-                    height:"30vh",
-                    x:100,
-                    y:100
-                }}
-            >
-                <div className="window">
-                    <div className="nav">
-                        <div className="dots">
-                            <div className="dot red"></div>
-                            <div className="dot yellow"></div>
-                            <div className="dot green"></div>
-                        </div>
-                        <div className="title"><p>dhruvalwindow -zsh</p></div>
-                    </div>
-                    <div className="main-content">
-                        {children}
-                    </div>
-                </div>
-            </Rnd>
+  return (
+    <div className="mac-window-container">
+      <Rnd
+        default={{
+          width: "52vw",
+          height: "60vh",
+          x: 50,
+          y: 50
+        }}
+        minWidth={300}
+        minHeight={400}
+        bounds="parent"
+        enableResizing={{
+          top: false,
+          right: true,
+          bottom: true,
+          left: false,
+          topRight: false,
+          bottomRight: true,
+          bottomLeft: false,
+          topLeft: false
+        }}
+        resizeHandleClasses={{
+          right: 'resize-handle-right',
+          bottom: 'resize-handle-bottom',
+          bottomRight: 'resize-handle-bottom-right'
+        }}
+        resizeHandleStyles={{
+          right: { width: '10px', right: '-5px' },
+          bottom: { height: '10px', bottom: '-5px' },
+          bottomRight: {
+            width: '20px',
+            height: '20px',
+            right: '-10px',
+            bottom: '-10px',
+            cursor: 'se-resize'
+          }
+        }}
+        style={{
+          position: 'absolute',
+          zIndex: 1000,
+        }}
+      >
+        <div className="window">
+          <div className="nav">
+            <div className="dots">
+              <div className="dot red"></div>
+              <div className="dot yellow"></div>
+              <div className="dot green"></div>
+            </div>
+            <div className="title"><p>dhruvalwindow -zsh</p></div>
+          </div>
+          <div className="main-content">
+            {children}
+          </div>
         </div>
-    )
+      </Rnd>
+    </div>
+  )
 }
 
 export default MacWindow
