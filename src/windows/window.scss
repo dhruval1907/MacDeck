@@ -1,6 +1,6 @@
 .window {
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 1000px;
     background-color: black;
     border-radius: 0.8rem;
     overflow: hidden;
@@ -40,5 +40,9 @@
             font-size: 0.5rem;
         }
     }
+    .main-content{
+        height: 100%;
+    }
 
 }
+

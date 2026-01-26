@@ -2,7 +2,7 @@ import React from 'react'
 import { Rnd } from 'react-rnd'
 import "./window.scss"
 
-const MacWimdow = () => {
+const MacWindow = ({ children }) => {
     return (
         <div>
             <Rnd>
@@ -16,6 +16,7 @@ const MacWimdow = () => {
                         <div className="title"><p>dhruvalwindow -zsh</p></div>
                     </div>
                     <div className="main-content">
+                        {children}
                     </div>
                 </div>
             </Rnd>
@@ -23,4 +24,4 @@ const MacWimdow = () => {
     )
 }
 
-export default MacWimdow
+export default MacWindow
