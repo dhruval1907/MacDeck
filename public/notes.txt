@@ -1,0 +1,120 @@
+/**
+ * @file: dhruval.profile.ts
+ * @author: Dhruval Dalwadi
+ * @summary: Front-End Engineer focused on modern, scalable UI systems.
+ */
+
+// --------------------------------------------------
+// 1. CORE TECH STACK
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",      // Strong
+    "Next.js",       // Beginner → Growing
+    "Redux",         // Working Knowledge
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+  ],
+  styling: [
+    "Modern CSS",
+    "Responsive Design",
+    "UI/UX Principles",
+  ],
+  learning: [
+    "Advanced React Patterns",
+    "Performance Optimization",
+    "Design Systems",
+  ],
+  tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Figma (UI Reference)",
+  ],
+};
+
+// --------------------------------------------------
+// 2. PROFESSIONAL JOURNEY
+// --------------------------------------------------
+
+class ProfessionalHistory {
+
+  /**
+   * CURRENT ROLE
+   * @period September 2025 – Present
+   */
+  public Sheryians_Coding_School(): RoleSummary {
+    const role = "Trainee Front-End Developer";
+    const location = "Bhopal, India";
+
+    const focusAreas = [
+      "React-based UI development",
+      "Modern component architecture",
+      "Clean and maintainable code",
+    ];
+
+    const growthMindset =
+      "Good is not good when better is possible";
+
+    return { role, location, focusAreas, growthMindset };
+  }
+}
+
+// --------------------------------------------------
+// 3. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = [
+  {
+    institute: "Sardar Patel University (SPU)",
+    degree: "M.Sc. in Information Technology",
+    status: "Pursuing",
+    graduation: "June 2025",
+  },
+  {
+    institute: "Sardar Patel University (SPU)",
+    degree: "B.Sc. in Computer Applications & IT",
+    period: "2022 – 2025",
+  },
+  {
+    institute: "Red & White Skill Education",
+    program: "MERN Stack Development",
+    year: "March 2025",
+  },
+];
+
+// --------------------------------------------------
+// 4. LANGUAGES
+// --------------------------------------------------
+
+const languages = {
+  Gujarati: "Native / Bilingual",
+  English: "Elementary",
+  Hindi: "Limited Working",
+};
+
+// --------------------------------------------------
+// 5. DEVELOPER STATUS
+// --------------------------------------------------
+
+const availability = {
+  role: "Front-End / React Developer",
+  location: "Anand, Gujarat, India",
+  openTo: ["Internship", "Entry-Level", "Freelance", "Remote"],
+};
+
+export default new ProfessionalHistory();
+
+
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ dhruval --profile
+> Role: Front-End & React Developer
+> Focus: Clean UI • Performance • UX
+> Stack: React • Next.js • Modern CSS
+> Status: Learning • Building • Improving
+> Location: Anand, Gujarat, India
+> Portfolio: In Progress
+> Ready to Ship 🚀

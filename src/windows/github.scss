@@ -5,10 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: center;
+  position: relative;
 
   .card {
-    max-width: 25rem;
+    max-width: 22rem;
     min-width: 280px;
     color: rgba(255, 255, 255, 0.797);
     padding: 1rem 0.75rem;
@@ -70,6 +70,11 @@
       }
     }
   }
+  
+  // Scroll buttons - hidden by default
+  .scroll-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -117,13 +122,15 @@
 @media (max-width: 480px) {
   .cards {
     padding: 1rem;
-    height: 25rem;
-    width: 25rem;
-    overflow-y: scroll;
     gap: 1rem;
+    overflow-y: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
     
     .card {
       padding: 0.75rem;
+      scroll-margin: 1rem; // For better snapping
       
       h1 {
         font-size: 0.9rem;
@@ -147,6 +154,80 @@
           padding: 0.25rem 0;
         }
       }
+    }
+  }
+  
+  // Scroll buttons - only visible on mobile
+  .scroll-btn {
+    display: block !important;
+    position: fixed;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4dabf7 0%, #1c7ed6 100%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      color: white;
+      stroke-width: 3px;
+    }
+    
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  
+  .scroll-up {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-down {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+// Hide buttons on screens larger than 480px
+@media (min-width: 481px) {
+  .scroll-btn {
+    display: none !important;
+  }
+}
+
+// Optional: Add scroll indicator animation
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-btn {
+    animation: pulse 2s infinite;
+    
+    &:hover {
+      animation: none;
     }
   }
 }
