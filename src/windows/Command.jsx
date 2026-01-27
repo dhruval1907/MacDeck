@@ -22,7 +22,7 @@ const Command = ({ windowName, setWindowsState }) => {
                             projects: {
                                 description: 'View my latest projects',
                                 usage: 'projects',
-                                fn: () => '1. MacOS Portfolio - Built with React & Vite\n2. Task Management App - Full-stack MERN application\n3. Real-time Chat App - Socket.io based communication\n4. E-commerce Platform - Next.js & Stripe integration'
+                                fn: () => '1. MacOS Portfolio - Built with React & Vite\n2. Movie react app - react.js & tailwind css\n3. Invincible Website  - HTML,css.Js\n4. Being Human e-comm platform - HTML,css,Js,Bootstrap'
                             },
                             contact: {
                                 description: 'Get my contact information',
