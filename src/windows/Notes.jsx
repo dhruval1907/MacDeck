@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Markdown from 'react-markdown'
 import MacWindow from './MacWimdow'
 import "./notes.scss"
-import "./global.scss"
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atelierForestDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 const Notes = () => {
     const [markdown, setmarkdown] = useState(null)
 
@@ -16,7 +17,7 @@ const Notes = () => {
     return (
         <MacWindow>
             <div className='note-window'>
-                {markdown ? <Markdown>{markdown}</Markdown> : <p>Loading....</p>}
+                {markdown ? <SyntaxHighlighter language='typescript' style={atelierForestDark}>{markdown}</SyntaxHighlighter> : <p>Loading....</p>}
             </div>
         </MacWindow>
     )
