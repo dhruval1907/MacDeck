@@ -13,7 +13,7 @@ import Pdf from '../windows/Pdf';
 import Spotify from '../windows/Spotify';
 import Command from '../windows/Command';
 // import "../assets/doc-icons/guthub.svg"
-const Dock = ({ windowsState, setWindowsState }) => {
+const Dock = ({  setWindowsState }) => {
     return (
         <footer className='dock'>
             <div className='icons github'

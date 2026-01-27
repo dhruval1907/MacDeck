@@ -3,9 +3,9 @@ import MacWimdow from './MacWimdow'
 import githubData from "../Data/github.json"
 import "./github.scss"
 
-const Github = ({ windowname, windowsState, setWindowsState }) => {
+const Github = ({ windowName, setWindowsState }) => {
     return (
-        <MacWimdow windowname={windowname} windowsState={windowsState} setWindowsState={setWindowsState}>
+        <MacWimdow windowname={windowName} setWindowsState={setWindowsState}>
             <div className="cards">
                 {githubData.map((project) => (
                     <div className="card" key={project.id}>

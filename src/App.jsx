@@ -31,11 +31,11 @@ const App = () => {
         <Dock windowsState={windowstate}
           setWindowsState={setwindowstate} />
         <Nav />
-        {windowstate.github && <Github windowName="github" windowState={windowstate} setWindowsState={setwindowstate} />}
-        {windowstate.notes && <Notes windowName="Notes" windowState={windowstate} setWindowsState={setwindowstate} />}
-        {windowstate.Pdf && <Pdf windowName="Pdf" windowState={windowstate} setWindowsState={setwindowstate} />}
-        {windowstate.Spotify && <Spotify windowName="Spotity" windowState={windowstate} setWindowsState={setwindowstate} />}
-        {windowstate.Commmand && <Command windowName="Command" windowState={windowstate} setWindowsState={setwindowstate} />}
+        {windowstate.github && <Github windowName="github" setWindowsState={setwindowstate} />}
+        {windowstate.notes && <Notes windowName="notes" setWindowsState={setwindowstate} />}
+        {windowstate.Pdf && <Pdf windowName="Pdf" setWindowsState={setwindowstate} />}
+        {windowstate.Spotify && <Spotify windowName="Spotify" setWindowsState={setwindowstate} />}
+        {windowstate.Commmand && <Command windowName="Commmand" setWindowsState={setwindowstate} />}
       </main>
     </div>
   )
