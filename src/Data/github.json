@@ -1,38 +1,47 @@
 [
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
-    "title": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my projects, skills, and contact details with a clean UI.",
+    "image": "/github/project1.png",
+    "title": "Invincible Website",
+    "description": "A pixel-perfect clone of the Invincible Tourist website built using HTML, CSS, and Bootstrap, created to strengthen my fundamentals in layout structuring, responsive design, and visual accuracy.",
     "tags": ["HTML", "CSS", "JavaScript"],
-    "repoLink": "https://github.com/yourusername/portfolio-website",
-    "demoLink": "https://yourusername.github.io/portfolio-website/"
+    "repoLink": "https://github.com/dhruval1907/Invincible_Clone",
+    "demoLink": "https://invincible-clone-fawn.vercel.app/"
   },
   {
     "id": 4,
-    "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
-    "title": "Interior Design Landing Page",
-    "description": "A modern interior design landing page built with responsive layout and elegant styling.",
-    "tags": ["HTML", "CSS", "Responsive Design"],
-    "repoLink": "https://github.com/yourusername/interior-design-website",
-    "demoLink": "https://yourusername.github.io/interior-design-website/"
+    "image": "/github/project2.png",
+    "title": "Netflix clone",
+    "description": "A Netflix homepage UI clone developed with HTML, CSS, and JavaScript as a learning project to practice layout structuring, styling, and UI replication.",
+    "tags": ["HTML", "CSS"],
+    "repoLink": "https://github.com/dhruval1907/Netflix_clone",
+    "demoLink": "https://netflix-clone-rosy-beta-51.vercel.app/"
   },
   {
     "id": 5,
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    "title": "Task Management App",
-    "description": "A simple task management app to add, delete, and track daily tasks efficiently.",
-    "tags": ["React", "JavaScript", "CSS"],
-    "repoLink": "https://github.com/yourusername/task-manager",
-    "demoLink": "https://task-manager-demo.netlify.app/"
+    "image": "/github/project3.png",
+    "title": "Movie React App",
+    "description": "A React movie app with user authentication pages (login & register), showcasing form validation, component-based UI, and structured navigation for user entry into the application.",
+    "tags": ["React", "Taiwind css"],
+    "repoLink": "https://github.com/dhruval1907/Movixa_React",
+    "demoLink": "https://movixa-react.vercel.app"
   },
   {
     "id": 6,
-    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    "image": "/github/project4.png",
     "title": "Expense Tracker",
     "description": "An expense tracker app that helps users monitor income and expenses with basic charts.",
     "tags": ["JavaScript", "Chart.js", "HTML", "CSS"],
     "repoLink": "https://github.com/yourusername/expense-tracker",
     "demoLink": "https://expense-tracker-demo.netlify.app/"
+  },
+  {
+    "id": 6,
+    "image": "/github/project5.png",
+    "title": "Obys Website",
+    "description": "A motion-focused website built with Shery.js, CSS animations, and modern JavaScript, featuring smooth scroll-based effects and dynamic interactions.",
+    "tags": ["JavaScript", "HTML", "CSS"],
+    "repoLink": "https://github.com/dhruval1907/obys",
+    "demoLink": "https://obys-seven.vercel.app"
   }
 ]

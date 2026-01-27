@@ -20,10 +20,10 @@ const Github = ({ windowName, setWindowsState }) => {
                         </div>
 
                         <div className="urls">
-                            <a href={project.repoLink} target="_blank" rel="noreferrer">
+                            <a href={project.repoLink} target={project.repoLink} rel="noreferrer">
                                 Repo
                             </a>
-                            <a href={project.demoLink} target="_blank" rel="noreferrer">
+                            <a href={project.demoLink} target='_blank'  rel="noreferrer">
                                 Demo
                             </a>
                         </div>
