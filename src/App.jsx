@@ -8,6 +8,7 @@ import Notes from "./windows/Notes"
 import hero1 from "../src/assets/main.jpg";
 import Pdf from "./windows/Pdf"
 import Spotify from "./windows/Spotify"
+import Command from "./windows/Command"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Notes />
         <Pdf/>
         <Spotify/>
+        <Command />
       </main>
     </div>
   )
