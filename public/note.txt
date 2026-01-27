@@ -1,3 +1,4 @@
+```ts
 /**
  * @file: dhruval.profile.ts
  * @author: Dhruval Dalwadi
@@ -40,12 +41,7 @@ const TECH_STACK = {
 // --------------------------------------------------
 
 class ProfessionalHistory {
-
-  /**
-   * CURRENT ROLE
-   * @period September 2025 – Present
-   */
-  public Sheryians_Coding_School(): RoleSummary {
+  public Sheryians_Coding_School() {
     const role = "Trainee Front-End Developer";
     const location = "Bhopal, India";
 
@@ -73,48 +69,16 @@ const education = [
     status: "Pursuing",
     graduation: "June 2025",
   },
-  {
-    institute: "Sardar Patel University (SPU)",
-    degree: "B.Sc. in Computer Applications & IT",
-    period: "2022 – 2025",
-  },
-  {
-    institute: "Red & White Skill Education",
-    program: "MERN Stack Development",
-    year: "March 2025",
-  },
 ];
 
 // --------------------------------------------------
-// 4. LANGUAGES
+// TERMINAL OUTPUT
 // --------------------------------------------------
 
-const languages = {
-  Gujarati: "Native / Bilingual",
-  English: "Elementary",
-  Hindi: "Limited Working",
-};
-
-// --------------------------------------------------
-// 5. DEVELOPER STATUS
-// --------------------------------------------------
-
-const availability = {
-  role: "Front-End / React Developer",
-  location: "Anand, Gujarat, India",
-  openTo: ["Internship", "Entry-Level", "Freelance", "Remote"],
-};
-
-export default new ProfessionalHistory();
-
-
-# TERMINAL OUTPUT
-# ---------------------------------------
 $ dhruval --profile
 > Role: Front-End & React Developer
 > Focus: Clean UI • Performance • UX
 > Stack: React • Next.js • Modern CSS
 > Status: Learning • Building • Improving
 > Location: Anand, Gujarat, India
-> Portfolio: In Progress
 > Ready to Ship 🚀

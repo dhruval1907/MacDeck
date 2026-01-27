@@ -10,16 +10,15 @@ const Notes = () => {
         fetch("/note.txt")
             .then(res => res.text())
             .then(text => setmarkdown(text))
-            .catch(err => console.error(err))
     }, [])
 
 
     return (
-       <MacWindow>
-        <div className='note-window'>
-            {markdown ? <Markdown>{markdown}</Markdown> : <p>Loading....</p>}
-        </div>
-       </MacWindow>
+        <MacWindow>
+            <div className='note-window'>
+                {markdown ? <Markdown>{markdown}</Markdown> : <p>Loading....</p>}
+            </div>
+        </MacWindow>
     )
 }
 
