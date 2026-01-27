@@ -1,12 +1,15 @@
 import React from 'react'
 import "./nav.scss"
 import DateTime from './DateTime'
+import apple from "../assets/navbar-icons/apple.svg";
+import wifi from "../assets/navbar-icons/wifi.svg";
+
 const Nav = () => {
     return (
         <nav>
             <div className="left">
                 <div className="apple-icon">
-                    <img src="./navbar-icons/apple.svg" alt="" />
+                    <img src={apple} alt="" />
                 </div>
                 <div className='nav-item'>
                     <p>afdhruval</p>
@@ -22,7 +25,7 @@ const Nav = () => {
                 </div>
             </div>
             <div className="right">
-                <img src="./navbar-icons/wifi.svg" alt="" />
+                <img src={wifi} alt="" />
                 <div className='nav-item'>
                     <DateTime />
                 </div>
