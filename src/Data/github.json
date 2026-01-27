@@ -1,7 +1,7 @@
 [
   {
     "id": 3,
-    "image": "/picture/project1.png",
+    "image": "/github/project1.png",
     "title": "Invincible Website",
     "description": "A pixel-perfect clone of the Invincible Tourist website built using HTML, CSS, and Bootstrap, created to strengthen my fundamentals in layout structuring, responsive design, and visual accuracy.",
     "tags": ["HTML", "CSS", "JavaScript"],
@@ -10,7 +10,7 @@
   },
   {
     "id": 4,
-    "image": "/picture/project2.png",
+    "image": "/github/project2.png",
     "title": "Netflix clone",
     "description": "A Netflix homepage UI clone developed with HTML, CSS, and JavaScript as a learning project to practice layout structuring, styling, and UI replication.",
     "tags": ["HTML", "CSS"],
@@ -19,7 +19,7 @@
   },
   {
     "id": 5,
-    "image": "/picture/project3.png",
+    "image": "/github/project3.png",
     "title": "Movie React App",
     "description": "A React movie app with user authentication pages (login & register), showcasing form validation, component-based UI, and structured navigation for user entry into the application.",
     "tags": ["React", "Taiwind css"],
@@ -28,7 +28,7 @@
   },
   {
     "id": 6,
-    "image": "/picture/project4.png",
+    "image": "/github/project4.png",
     "title": "Expense Tracker",
     "description": "An expense tracker app that helps users monitor income and expenses with basic charts.",
     "tags": ["JavaScript", "Chart.js", "HTML", "CSS"],
@@ -37,7 +37,7 @@
   },
   {
     "id": 6,
-    "image": "/picture/project5.png",
+    "image": "/github/project5.png",
     "title": "Obys Website",
     "description": "A motion-focused website built with Shery.js, CSS animations, and modern JavaScript, featuring smooth scroll-based effects and dynamic interactions.",
     "tags": ["JavaScript", "HTML", "CSS"],
