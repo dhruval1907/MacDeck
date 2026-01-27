@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
 import MacWindow from './MacWimdow'
 import "./notes.scss"
-
+import "./global.scss"
 const Notes = () => {
     const [markdown, setmarkdown] = useState(null)
 
