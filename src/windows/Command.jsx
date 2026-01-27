@@ -9,20 +9,15 @@ const Command = () => {
                 <div className='cli-window'>
                     <Terminal
                         commands={{
-                            // help: {
-                            //     description: 'Display all available commands',
-                            //     usage: 'help',
-                            //     fn: () => 'Available commands: help, about, skills, projects, contact, clear, whoami'
-                            // },
                             about: {
                                 description: 'About me',
                                 usage: 'about',
-                                fn: () => 'Hi! I\'m a Full Stack Developer passionate about creating elegant solutions to complex problems. I specialize in React, Node.js, and modern web technologies.'
+                                fn: () => 'Hi! I\'m a Front-end Developer passionate about creating elegant UI/UX. I specialize in React-js, and modern web technologies.'
                             },
                             skills: {
                                 description: 'List my technical skills',
                                 usage: 'skills',
-                                fn: () => 'Languages: JavaScript, Python, SQL\nFrameworks: React, Node.js, Express\nTools: Git, Docker, AWS\nDatabases: MongoDB, PostgreSQL'
+                                fn: () => 'Languages: JavaScript, Python, Java ,HTML,CSS\nFrameworks: React, Redux ,Tailwind CSS \nTools: Git, Github\nDatabases: Sql'
                             },
                             projects: {
                                 description: 'View my latest projects',
@@ -32,7 +27,7 @@ const Command = () => {
                             contact: {
                                 description: 'Get my contact information',
                                 usage: 'contact',
-                                fn: () => 'Email: your-email@example.com\nGithub: github.com/yourprofile\nLinkedIn: linkedin.com/in/yourprofile\nTwitter: @yourhandle'
+                                fn: () => 'Email: dhruvaldalwadi1907@gmail.com\nGithub: https://github.com/dhruval1907\nLinkedIn: https://www.linkedin.com/in/dhruval-dalwadi-892144306/\nTwitter: https://x.com/DalwadiaDhruval'
                             },
                             whoami: {
                                 description: 'Display current user',
