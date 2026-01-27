@@ -13,9 +13,9 @@ const MacWindow = ({ children }) => {
           x: 50,
           y: 50
         }}
-        minWidth={300}
-        minHeight={400}
-        bounds="parent"
+        // minWidth={300}
+        // minHeight={400}
+        // bounds="parent"
         enableResizing={{
           top: false,
           right: true,
