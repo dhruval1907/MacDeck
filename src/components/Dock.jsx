@@ -9,23 +9,42 @@ import mail from "../assets/doc-icons/mail.svg"
 import note from "../assets/doc-icons/note.svg"
 import pdf from "../assets/doc-icons/pdf.svg"
 import spotify from "../assets/doc-icons/spotify.svg"
+import Pdf from '../windows/Pdf';
+import Spotify from '../windows/Spotify';
+import Command from '../windows/Command';
 // import "../assets/doc-icons/guthub.svg"
-const Dock = () => {
+const Dock = ({ windowsState, setWindowsState }) => {
     return (
         <footer className='dock'>
-            <div className='icons github'>
+            <div className='icons github'
+                onClick={() => {
+                    setWindowsState(state => ({ ...state, github: true }))
+                }}
+            >
                 <img src={github} alt="" />
             </div>
-            <div className='icons note'>
+            <div className='icons note'
+                onClick={() => {
+                    setWindowsState(state => ({ ...state, notes: true }))
+                }}
+            >
                 <img src={note} alt="" />
             </div>
-            <div className='icons pdf'>
+            <div className='icons pdf'
+                onClick={() => {
+                    setWindowsState(state => ({ ...state, Pdf: true }))
+                }}
+            >
                 <img src={pdf} alt="" />
             </div>
             <div className='icons calender'>
                 <img src={calender} alt="" />
             </div>
-            <div className='icons spotify'>
+            <div className='icons spotify'
+                onClick={() => {
+                    setWindowsState(state => ({ ...state, Spotify: true }))
+                }}
+            >
                 <img src={spotify} alt="" />
             </div>
             <div className='icons mail'>
@@ -34,7 +53,11 @@ const Dock = () => {
             <div className='icons link'>
                 <img src={link} alt="" />
             </div>
-            <div className='icons cli'>
+            <div className='icons cli'
+                onClick={() => {
+                    setWindowsState(state => ({ ...state, Commmand: true }))
+                }}
+            >
                 <img src={cli} alt="" />
             </div>
         </footer>

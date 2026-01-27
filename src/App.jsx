@@ -9,18 +9,33 @@ import hero1 from "../src/assets/main.jpg";
 import Pdf from "./windows/Pdf"
 import Spotify from "./windows/Spotify"
 import Command from "./windows/Command"
+import { useState } from "react"
 
 const App = () => {
+
+  const [windowstate, setwindowstate] = useState({
+    github: false,
+    notes: false,
+    Pdf: false,
+    Commmand: false,
+    Spotify: false,
+    resume: false,
+    calender: false,
+    link: false,
+    email: false,
+  })
+
   return (
     <div>
       <main style={{ backgroundImage: `url(${hero1})`, backgroundPosition: "center", backgroundSize: "cover" }}>
-        <Dock />
+        <Dock windowsState={windowstate}
+          setWindowsState={setwindowstate} />
         <Nav />
-        <Github/>
-        <Notes />
-        <Pdf/>
-        <Spotify/>
-        <Command />
+        {windowstate.github && <Github windowName="github" windowState={windowstate} setWindowsState={setwindowstate} />}
+        {windowstate.notes && <Notes windowName="Notes" windowState={windowstate} setWindowsState={setwindowstate} />}
+        {windowstate.Pdf && <Pdf windowName="Pdf" windowState={windowstate} setWindowsState={setwindowstate} />}
+        {windowstate.Spotify && <Spotify windowName="Spotity" windowState={windowstate} setWindowsState={setwindowstate} />}
+        {windowstate.Commmand && <Command windowName="Command" windowState={windowstate} setWindowsState={setwindowstate} />}
       </main>
     </div>
   )
