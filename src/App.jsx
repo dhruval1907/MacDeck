@@ -4,6 +4,7 @@ import Dock from "./components/Dock"
 import Nav from "./components/Nav"
 import MacWimdow from "./windows/MacWimdow"
 import Github from "./windows/Github"
+import Notes from "./windows/Notes"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Dock />
         <Nav />
         <Github/>
+        <Notes />
       </main>
     </div>
   )
