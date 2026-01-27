@@ -4,6 +4,7 @@ import "./dock.scss"
 import github from "../assets/doc-icons/github.svg"
 import link from "../assets/doc-icons/link.svg"
 import cli from "../assets/doc-icons/cli.svg"
+import calender from "../assets/doc-icons/calender.svg"
 import mail from "../assets/doc-icons/mail.svg"
 import note from "../assets/doc-icons/note.svg"
 import pdf from "../assets/doc-icons/pdf.svg"
@@ -22,7 +23,7 @@ const Dock = () => {
                 <img src={pdf} alt="" />
             </div>
             <div className='icons calender'>
-                <img src={cli} alt="" />
+                <img src={calender} alt="" />
             </div>
             <div className='icons spotify'>
                 <img src={spotify} alt="" />
