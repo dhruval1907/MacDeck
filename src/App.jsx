@@ -7,6 +7,7 @@ import Github from "./windows/Github"
 import Notes from "./windows/Notes"
 import hero1 from "../src/assets/main.jpg";
 import Pdf from "./windows/Pdf"
+import Spotify from "./windows/Spotify"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Github/>
         <Notes />
         <Pdf/>
+        <Spotify/>
       </main>
     </div>
   )
