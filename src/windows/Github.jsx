@@ -3,7 +3,7 @@ import MacWimdow from './MacWimdow'
 import githubData from "../Data/github.json"
 import "./github.scss"
 
-const Github = ({ windowName, setWindowsState }) => {
+const Github = ({ windowName, setWindowsState, }) => {
     return (
         <MacWimdow windowname={windowName} setWindowsState={setWindowsState}>
             <div className="cards">
