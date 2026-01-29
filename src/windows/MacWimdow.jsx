@@ -1,7 +1,7 @@
 import React from 'react'
 import { Rnd } from 'react-rnd'
 import "./window.scss"
-import "./global.scss"
+
 
 const MacWindow = ({ children, width = "52vw", height = "60vh", windowname, setWindowsState }) => {
   return (
@@ -13,9 +13,6 @@ const MacWindow = ({ children, width = "52vw", height = "60vh", windowname, setW
           x: 50,
           y: 50
         }}
-        // minWidth={300}
-        // minHeight={400}
-        // bounds="parent"
         enableResizing={{
           top: false,
           right: true,
