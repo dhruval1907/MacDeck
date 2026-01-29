@@ -14,10 +14,10 @@ const MacWindow = ({ children, width = "52vw", height = "60vh", windowname, setW
           y: 50
         }}
         enableResizing={{
-          top: false,
+          top: true,
           right: true,
           bottom: true,
-          left: false,
+          left: true,
           topRight: false,
           bottomRight: true,
           bottomLeft: false,
